@@ -5,6 +5,8 @@ A professional website, blog, portfolio, etc.
 * [General info](#general-info)
 * [Technologies](#technologies)
 * [Setup](#setup)
+* [Usage](#usage)
+* [License](#license)
 
 ## General info
 Lorem ipsum dolor
@@ -22,3 +24,6 @@ Lorem ipsum dolor
 ```python
 #insert code here
 ```
+
+## License
+[MIT]
