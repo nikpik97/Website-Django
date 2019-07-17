@@ -16,3 +16,9 @@ Project is created with:
 	
 ## Setup
 Lorem ipsum dolor
+
+## Usage
+
+```python
+#insert code here
+```
