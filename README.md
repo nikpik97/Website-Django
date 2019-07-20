@@ -24,7 +24,7 @@ Lorem ipsum dolor
 #insert code here
 ```
 
-##References
+## References
 Here are some websites I used to get started:
 https://medium.com/ristek-fasilkom/controlling-raspberry-pi-with-django-a91940fc3f4d
 https://mikesmithers.wordpress.com/2017/02/21/configuring-django-with-apache-on-a-raspberry-pi/
