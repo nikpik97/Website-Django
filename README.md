@@ -9,15 +9,17 @@
 * [License](#license)
 
 ## General info
-This project meant to serve as an introductory expereince in full-stack web development. I'm going to be experimenting with different technologies such as django, react-native, etc. 
-	
+This project meant to serve as an introductory expereince in full-stack web development. I'm going to be experimenting with different technologies such as django, react-native, etc. In addition, this project will (hopefully) end up being a professional-looking website with an about-me/resume section, portfolio, blog, and whatever else I see fit.
+
 ## Technologies
 Project is created with:
-*  Lorem
-*  Ipsum
+*  Raspberry Pi
+*  Python 3.6
+*  Apache Web Server
+*  Django
 	
 ## Setup
-Lorem ipsum dolor
+
 
 ## Usage
 ```
