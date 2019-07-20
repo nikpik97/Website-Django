@@ -20,10 +20,9 @@ Project is created with:
 Lorem ipsum dolor
 
 ## Usage
-
-```python
+```
 #insert code here
 ```
 
 ## License
-[MIT]
+[MIT](https://github.com/nikpik97/Website-Django/blob/master/LICENSE)
