@@ -20,12 +20,19 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '70m0==l14+5&xo&2h+@#n0+8@*yftw%!rd6!+#u(#0616#3jm3'
+f = open('/home/pi/Documents/Website/Website-Django/src/website/config.txt', 'r')
+linelist=f.readlines()
+
+SECRET_KEY =  linelist[0]
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["localhost", "0.0.0.0", "192.168.0.101"]
+import requests
+res = requests.get('http://icanhazip.com')
+res=res.text[:len(res.text)-1]
+
+ALLOWED_HOSTS = ["localhost", "0.0.0.0", "192.168.0.100", res, 'nikhilpaidipally.crabdance.com']
 
 
 # Application definition
