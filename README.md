@@ -31,7 +31,7 @@ Here are some websites I used to get started:<br/>
 https://medium.com/ristek-fasilkom/controlling-raspberry-pi-with-django-a91940fc3f4d
 https://mikesmithers.wordpress.com/2017/02/21/configuring-django-with-apache-on-a-raspberry-pi/
 http://raspberrywebserver.com/serveradmin/get-your-raspberry-pi-web-site-on-line.html
-
+https://www.tutorialspoint.com/django/index.htm
 
 ## License
 [MIT](https://github.com/nikpik97/Website-Django/blob/master/LICENSE)
