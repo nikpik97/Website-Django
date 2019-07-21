@@ -32,6 +32,7 @@ https://medium.com/ristek-fasilkom/controlling-raspberry-pi-with-django-a91940fc
 https://mikesmithers.wordpress.com/2017/02/21/configuring-django-with-apache-on-a-raspberry-pi/  
 http://raspberrywebserver.com/serveradmin/get-your-raspberry-pi-web-site-on-line.html  
 https://www.tutorialspoint.com/django/index.htm  
+https://www.ionos.com/digitalguide/server/configuration/provide-raspberry-pi-with-a-static-ip-address/  
 
 ## License
 [MIT](https://github.com/nikpik97/Website-Django/blob/master/LICENSE)
