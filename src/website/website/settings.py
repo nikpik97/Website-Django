@@ -32,7 +32,7 @@ import requests
 res = requests.get('http://icanhazip.com')
 res=res.text[:len(res.text)-1]
 
-ALLOWED_HOSTS = ["localhost", "0.0.0.0", "192.168.0.100", res, 'nikhilpaidipally.crabdance.com']
+ALLOWED_HOSTS = ["localhost", "0.0.0.0", res, 'nikhilpaidipally.crabdance.com']
 
 
 # Application definition
