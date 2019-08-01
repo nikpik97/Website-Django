@@ -1,29 +1,36 @@
-{% load static %}
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" type="text/css" href="{% static 'home_page/templates/layout.css' %}">
-
+<link rel="stylesheet" href="http://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="http://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js">
+<link rel="javascript" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js">
+<STYLE>
+  .masthead {
+  height: 100vh;
+  min-height: 500px;
+  background-image: url("http://cdnb.artstation.com/p/assets/images/images/003/733/761/large/mark-kirkpatrick-mk-landscape-01.jpg?1476919494");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;}
+</STYLE>
 <!-- Navigation -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light shadow fixed-top">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow fixed-top">
   <div class="container">
-    <a class="navbar-brand" href="#">Start Bootstrap</a>
+    <a class="navbar-brand" href="">Nikhil Paidipally</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
     <div class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="#">Home
-                <span class="sr-only">(current)</span>
-              </a>
+          <a class="nav-link" href="">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
+          <a class="nav-link" href="">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Services</a>
+          <a class="nav-link" href="">Blog</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
+          <a class="nav-link" href="">Contact</a>
         </li>
       </ul>
     </div>
@@ -32,20 +39,20 @@
 
 <!-- Full Page Image Header with Vertically Centered Content -->
 <header class="masthead">
-  <div class="container h-100">
-    <div class="row h-100 align-items-center">
-      <div class="col-12 text-center">
-        <h1 class="font-weight-light">Vertically Centered Masthead Content</h1>
-        <p class="lead">A great starter layout for a landing page</p>
+    <div class="container h-100">
+      <div class="row h-100 align-items-center">
+        <div class="col-12 text-center">
+          <h1 class="font-weight-heavy">Welcome to my website!</h1>
+          <p>As you can see, it's still a work in progress :)</p>
+        </div>
       </div>
     </div>
-  </div>
 </header>
 
 <!-- Page Content -->
 <section class="py-5">
   <div class="container">
-    <h2 class="font-weight-light">Page Content</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus ab nulla dolorum autem nisi officiis blanditiis voluptatem hic, assumenda aspernatur facere ipsam nemo ratione cumque magnam enim fugiat reprehenderit expedita.</p>
+    <h2 class="font-weight-light">More about this webite...</h2>
+    <p>I'm hosting this website on a raspberry pi using the Nginx/Gunicorn stack as the http server and Python's Django framework for the backend. This webpage is going to serve (pun intended) as my first real foray into web development. My goal is to add an "about me" page, a blog, a portfolio, and a contact me form  as well as a well-designed backend to handle all of that. Check back in a few weeks and, hopefully, you'll be seeing a more beautiful, featureful, responsive website!</p>
   </div>
 </section>
