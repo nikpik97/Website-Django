@@ -37,23 +37,21 @@
     </div>
   </div>
 </nav>
-
-<!-- Full Page Image Header with Vertically Centered Content -->
-<header class="masthead">
-    <div class="container h-100">
-      <div class="row h-100 align-items-center">
-        <div class="col-12 text-center">
-          <h1 class="font-weight-heavy">Welcome to my website!</h1>
-          <p>As you can see, it's still a work in progress :)</p>
-        </div>
-      </div>
-    </div>
-</header>
-
-<!-- Page Content -->
-<section class="py-5">
-  <div class="container">
-    <h2 class="font-weight-light">More about this webite...</h2>
-    <p>I'm hosting this website on a raspberry pi using the Nginx/Gunicorn stack as the http server and Python's Django framework for the backend. This webpage is going to serve (pun intended) as my first real foray into web development. My goal is to add an "about me" page, a blog, a portfolio, and a contact me form  as well as a well-designed backend to handle all of that. Check back in a few weeks and, hopefully, you'll be seeing a more beautiful, featureful, responsive website!</p>
-  </div>
-</section>
+<div class="col-md-8 offset-md-2">
+    <h1>.</h1>
+    <h1>Blog Index</h1>
+    <hr>
+    {% for post in posts %}
+    <h2><a href="{% url 'blog_detail' post.pk%}">{{ post.title }}</a></h2>
+    <small>
+        {{ post.created_on.date }} |&nbsp;
+        Categories:&nbsp;
+        {% for category in post.categories.all %}
+        <a href="{% url 'blog_category' category.name %}">
+            {{ category.name }}
+        </a>&nbsp;
+        {% endfor %}
+    </small>
+    <p>{{ post.body | slice:":400" }}...</p>
+    {% endfor %}
+</div>

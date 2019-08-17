@@ -24,15 +24,17 @@ f = open('/home/pi/Documents/Website/Website-Django/src/personal_website/config.
 linelist=f.readlines()
 
 SECRET_KEY =  linelist[0]
+GOOGLE_RECAPTCHA_SECRET_KEY = linelist[1]
 
 # SECURITY WARNING: don't run with debug turned on in production!
+
 DEBUG = True
 
 import requests
 res = requests.get('http://icanhazip.com')
-res=res.text[:len(res.text)-1]
+res = res.text[:len(res.text)-1]
 
-ALLOWED_HOSTS = ["localhost", "0.0.0.0", res, 'nikhilpaidipally.crabdance.com']
+ALLOWED_HOSTS = ["localhost", "0.0.0.0", res, 'nikhilpaidipally.crabdance.com', 'raspberrypi']
 
 
 # Application definition
@@ -45,6 +47,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'home_page',
+    'blog',
+    'about_me',
 ]
 
 MIDDLEWARE = [
