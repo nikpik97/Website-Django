@@ -39,14 +39,11 @@ def blog_detail(request, pk):
             response = urllib.request.urlopen(req)
             result = json.loads(response.read().decode())
             ''' End reCAPTCHA validation '''
-            print(result)
             if result['success']:
                 comment = Comment(author=form.cleaned_data["author"], body=form.cleaned_data["body"], post=post)
                 comment.save()
                 messages.success(request, 'New comment added with success!')
-                print("error")
             else:
-                print("error")
                 messages.error(request, 'Invalid reCAPTCHA. Please try again.')
 
     comments = Comment.objects.filter(post=post)
